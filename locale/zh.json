@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "CodeGraph MCP",
+    "description": "连接本地 CodeGraph MCP 服务，让智能体可以使用它的代码图谱与源码探索工具。"
+  }
+}

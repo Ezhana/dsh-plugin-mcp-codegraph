@@ -1,0 +1,29 @@
+{
+  "name": "dsh-plugin-mcp-codegraph",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DSH bundle that connects the local CodeGraph MCP server (codegraph serve --mcp) so its code-intelligence tools are available to the agent.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "mcp",
+    "codegraph",
+    "bundle"
+  ],
+  "exports": {
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

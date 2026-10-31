@@ -1,0 +1,15 @@
+# CodeGraph MCP connection: stdio transport, one server per row.
+# Bundle: dsh-plugin-mcp-codegraph. Tools appear to the agent as mcp__codegraph__<tool>.
+# `command` is resolved from PATH: codegraph must be installed and visible to the
+# process that starts the harness. If it is not (e.g. GUI launch with a minimal PATH),
+# use an absolute path or a login-shell wrapper instead.
+- insert:
+    - id: codegraph-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: codegraph
+        transport: stdio
+        command: codegraph
+        args: ['serve', '--mcp']
+        toolCallTimeoutMs: 120000
+        failOnStartupError: false

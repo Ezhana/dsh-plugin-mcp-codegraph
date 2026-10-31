@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "CodeGraph MCP",
+    "description": "Connects the local CodeGraph MCP server so its code-intelligence and source-exploration tools are available to the agent."
+  }
+}
